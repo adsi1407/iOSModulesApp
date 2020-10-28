@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Presentation/Presentation.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Infrastructure">
+      <FileRef
+         location = "group:DeviceHardware/DeviceHardware.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DataAccess/DataAccess.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Domain/Domain.xcodeproj">
+   </FileRef>
+</Workspace>
