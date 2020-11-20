@@ -9,7 +9,7 @@ import Foundation
 
 public class PersonService {
     
-    private var personRepository: PersonRepository
+    private let personRepository: PersonRepository
     
     public init(personRepository: PersonRepository) {
         self.personRepository = personRepository
