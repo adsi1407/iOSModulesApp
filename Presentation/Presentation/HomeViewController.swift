@@ -16,8 +16,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let personRepository: PersonRepository = PersonRepositoryRemote()
-        personService = PersonService(personRepository: personRepository)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        personService = appDelegate.container.resolve(PersonService.self)!
         
         var roles: Array<Role> = Array<Role>()
         let role: Role = Role(name: "Role01")
