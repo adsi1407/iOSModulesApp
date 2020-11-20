@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		79230B87254A22B900A06B8D /* DeviceHardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 79230B85254A22B900A06B8D /* DeviceHardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		799F2129254B31AD00256C5C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799F2128254B31AD00256C5C /* Domain.framework */; };
+		799F212A254B31AD00256C5C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 799F2128254B31AD00256C5C /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		799F212B254B31AD00256C5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				799F212A254B31AD00256C5C /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79230B82254A22B900A06B8D /* DeviceHardware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceHardware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B85254A22B900A06B8D /* DeviceHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceHardware.h; sourceTree = "<group>"; };
 		79230B86254A22B900A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799F2128254B31AD00256C5C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799F2129254B31AD00256C5C /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +50,7 @@
 			children = (
 				79230B84254A22B900A06B8D /* DeviceHardware */,
 				79230B83254A22B900A06B8D /* Products */,
+				799F2127254B31AD00256C5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +69,14 @@
 				79230B86254A22B900A06B8D /* Info.plist */,
 			);
 			path = DeviceHardware;
+			sourceTree = "<group>";
+		};
+		799F2127254B31AD00256C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799F2128254B31AD00256C5C /* Domain.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 				79230B7E254A22B900A06B8D /* Sources */,
 				79230B7F254A22B900A06B8D /* Frameworks */,
 				79230B80254A22B900A06B8D /* Resources */,
+				799F212B254B31AD00256C5C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,8 +304,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DeviceHardware;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,8 +328,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DeviceHardware;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
