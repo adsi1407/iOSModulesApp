@@ -10,6 +10,11 @@
 		79230B0B254A20F200A06B8D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79230B01254A20F200A06B8D /* Domain.framework */; };
 		79230B10254A20F200A06B8D /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79230B0F254A20F200A06B8D /* DomainTests.swift */; };
 		79230B12254A20F200A06B8D /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 79230B04254A20F200A06B8D /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7940B3CA2566B76700680BCE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3C92566B76700680BCE /* Person.swift */; };
+		7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3CE2566BA1D00680BCE /* PersonRepository.swift */; };
+		7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3D42566BC0A00680BCE /* PersonService.swift */; };
+		799F2133254B330D00256C5C /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F2132254B330D00256C5C /* Role.swift */; };
+		799F2139254B33A300256C5C /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F2138254B33A300256C5C /* AuthUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		79230B0A254A20F200A06B8D /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B0F254A20F200A06B8D /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		79230B11254A20F200A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7940B3C92566B76700680BCE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7940B3CE2566BA1D00680BCE /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		7940B3D42566BC0A00680BCE /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
+		799F2132254B330D00256C5C /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		799F2138254B33A300256C5C /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		79230B03254A20F200A06B8D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				7940B3CD2566BA0000680BCE /* Repository */,
+				7940B3C82566A2C200680BCE /* Service */,
+				799F2131254B320A00256C5C /* Model */,
 				79230B04254A20F200A06B8D /* Domain.h */,
 				79230B05254A20F200A06B8D /* Info.plist */,
 			);
@@ -84,6 +97,32 @@
 				79230B11254A20F200A06B8D /* Info.plist */,
 			);
 			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		7940B3C82566A2C200680BCE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3D42566BC0A00680BCE /* PersonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7940B3CD2566BA0000680BCE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3CE2566BA1D00680BCE /* PersonRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		799F2131254B320A00256C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				799F2132254B330D00256C5C /* Role.swift */,
+				799F2138254B33A300256C5C /* AuthUser.swift */,
+				7940B3C92566B76700680BCE /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +186,7 @@
 				TargetAttributes = {
 					79230B00254A20F200A06B8D = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					79230B09254A20F200A06B8D = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -194,6 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */,
+				7940B3CA2566B76700680BCE /* Person.swift in Sources */,
+				799F2139254B33A300256C5C /* AuthUser.swift in Sources */,
+				799F2133254B330D00256C5C /* Role.swift in Sources */,
+				7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +386,7 @@
 		79230B16254A20F200A06B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,14 +402,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		79230B17254A20F200A06B8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -379,14 +428,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		79230B19254A20F200A06B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +455,7 @@
 		79230B1A254A20F200A06B8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

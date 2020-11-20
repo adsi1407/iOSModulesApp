@@ -1,0 +1,27 @@
+//
+//  PersonService.swift
+//  Domain
+//
+//  Created by Andrés David Santacoloma Isaza - Ceiba Software on 19/11/20.
+//
+
+import Foundation
+
+public class PersonService {
+    
+    private var personRepository: PersonRepository
+    
+    public init(personRepository: PersonRepository) {
+        self.personRepository = personRepository
+    }
+    
+    public func savePerson(person: Person) {
+        
+        if personRepository.personExists(id: person.getId()) {
+            //throws exception
+        }
+        else {
+            personRepository.savePerson(person: person)
+        }
+    }
+}
