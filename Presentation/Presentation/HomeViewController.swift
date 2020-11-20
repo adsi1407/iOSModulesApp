@@ -9,7 +9,7 @@ import UIKit
 import Domain
 import DataAccess
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     private var personService: PersonService?
     
