@@ -8,12 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		79230B6E254A229800A06B8D /* DataAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 79230B6C254A229800A06B8D /* DataAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7940B3DC2566C28B00680BCE /* PersonDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3DB2566C28B00680BCE /* PersonDto.swift */; };
+		7940B3E02566C29C00680BCE /* PersonRepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */; };
+		7940B3E22566C59600680BCE /* PersonTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3E12566C59600680BCE /* PersonTranslator.swift */; };
+		7940B3EA2566E02900680BCE /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7940B3E92566E02900680BCE /* Domain.framework */; };
+		7940B3EB2566E02900680BCE /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7940B3E92566E02900680BCE /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7940B3EC2566E02900680BCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7940B3EB2566E02900680BCE /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		79230B69254A229800A06B8D /* DataAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B6C254A229800A06B8D /* DataAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
 		79230B6D254A229800A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7940B3DB2566C28B00680BCE /* PersonDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDto.swift; sourceTree = "<group>"; };
+		7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepositoryRemote.swift; sourceTree = "<group>"; };
+		7940B3E12566C59600680BCE /* PersonTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTranslator.swift; sourceTree = "<group>"; };
+		7940B3E42566C74E00680BCE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7940B3E92566E02900680BCE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		799F212D254B31B400256C5C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7940B3EA2566E02900680BCE /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +58,7 @@
 			children = (
 				79230B6B254A229800A06B8D /* DataAccess */,
 				79230B6A254A229800A06B8D /* Products */,
+				799F212C254B31B400256C5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +73,47 @@
 		79230B6B254A229800A06B8D /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				7940B3D92566C20300680BCE /* Anticorruption */,
 				79230B6C254A229800A06B8D /* DataAccess.h */,
+				7940B3D82566C1AB00680BCE /* Dto */,
 				79230B6D254A229800A06B8D /* Info.plist */,
+				7940B3DA2566C21100680BCE /* Repository */,
 			);
 			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		7940B3D82566C1AB00680BCE /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3DB2566C28B00680BCE /* PersonDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		7940B3D92566C20300680BCE /* Anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3E12566C59600680BCE /* PersonTranslator.swift */,
+			);
+			path = Anticorruption;
+			sourceTree = "<group>";
+		};
+		7940B3DA2566C21100680BCE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		799F212C254B31B400256C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7940B3E92566E02900680BCE /* Domain.framework */,
+				7940B3E42566C74E00680BCE /* Domain.framework */,
+				799F212D254B31B400256C5C /* Domain.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +138,7 @@
 				79230B65254A229800A06B8D /* Sources */,
 				79230B66254A229800A06B8D /* Frameworks */,
 				79230B67254A229800A06B8D /* Resources */,
+				7940B3EC2566E02900680BCE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,6 +159,7 @@
 				TargetAttributes = {
 					79230B68254A229800A06B8D = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7940B3E02566C29C00680BCE /* PersonRepositoryRemote.swift in Sources */,
+				7940B3DC2566C28B00680BCE /* PersonDto.swift in Sources */,
+				7940B3E22566C59600680BCE /* PersonTranslator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +330,7 @@
 		79230B72254A229800A06B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,14 +346,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccess;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		79230B73254A229800A06B8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -299,8 +372,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccess;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
