@@ -24,9 +24,20 @@ class HomeViewController: UIViewController {
         role.setDescription(description: "RoleDescription01")
         roles.append(role)
         
-        let authUser: AuthUser = AuthUser(userId: "User01", password: "123", roles: roles)
-        let person: Person = Person(id: "Person01", name: "Summy Person", authUser: authUser)
-        personService!.savePerson(person: person)
+        do {
+            let authUser: AuthUser = try AuthUser(userId: "User01", password: "123", roles: roles)
+            let person = try Person(id: "Person01", name: "Summy Person", authUser: authUser)
+            try personService!.savePerson(person: person)
+            print("Se ha guardado correctamente")
+        } catch BusinessError.EmptyRoles(let errorMessage) {
+            print(errorMessage)
+        } catch BusinessError.WrongPassword(let errorMessage) {
+            print(errorMessage)
+        } catch BusinessError.PersonAlreadyExists(let errorMessage) {
+            print(errorMessage)
+        } catch {
+            print("Sucedió un error")
+        }
     }
 
 }
