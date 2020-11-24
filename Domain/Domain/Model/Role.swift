@@ -20,7 +20,7 @@ public class Role {
         return name
     }
     
-    public func getDescription() -> String! {
+    public func getDescription() -> String? {
         return description
     }
     

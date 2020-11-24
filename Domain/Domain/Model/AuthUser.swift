@@ -10,13 +10,14 @@ import Foundation
 public class AuthUser {
     
     private var userId: String
-    private var password: String
+    private var password: String?
     private var roles: Array<Role>
     
-    public init(userId: String, password: String, roles: Array<Role>) {
+    public init(userId: String, password: String, roles: Array<Role>) throws {
         self.userId = userId
-        self.password = password
         self.roles = roles
+        
+        try setPassword(password: password)
     }
     
     public func getUserId() -> String {
@@ -24,10 +25,25 @@ public class AuthUser {
     }
     
     public func getPassword() -> String {
-        return password
+        return password!
     }
     
     public func getRoles() -> Array<Role> {
         return roles
+    }
+    
+    private func setPassword(password: String) throws {
+        
+        if validatePassword(password: password) {
+            self.password = password
+        }
+        else {
+            throw BusinessError.WrongPassword()
+        }
+    }
+    
+    private func validatePassword(password: String) -> Bool {
+        
+        return true
     }
 }

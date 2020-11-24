@@ -11,12 +11,13 @@ public class Person {
     
     private var id: String
     private var name: String
-    private var authUser: AuthUser
+    private var authUser: AuthUser?
     
-    public init(id: String, name: String, authUser: AuthUser) {
+    public init(id: String, name: String, authUser: AuthUser) throws {
         self.id = id
         self.name = name
-        self.authUser = authUser
+        
+        try setAuthUser(authUser: authUser)
     }
     
     public func getId() -> String {
@@ -28,6 +29,21 @@ public class Person {
     }
     
     public func getAuthUser() -> AuthUser {
-        return authUser
+        return authUser!
+    }
+    
+    private func setAuthUser(authUser: AuthUser) throws {
+        
+        if validateAtLeastOnerole(authUser: authUser) {
+            self.authUser = authUser
+        }
+        else {
+            throw BusinessError.EmptyRoles()
+        }
+    }
+    
+    private func validateAtLeastOnerole(authUser: AuthUser) -> Bool {
+        
+        return authUser.getRoles().count > 0
     }
 }

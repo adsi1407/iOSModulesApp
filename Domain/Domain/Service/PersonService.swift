@@ -15,10 +15,10 @@ public class PersonService {
         self.personRepository = personRepository
     }
     
-    public func savePerson(person: Person) {
+    public func savePerson(person: Person) throws {
         
         if personRepository.personExists(id: person.getId()) {
-            //throws exception
+            throw BusinessError.PersonAlreadyExists()
         }
         else {
             personRepository.savePerson(person: person)
