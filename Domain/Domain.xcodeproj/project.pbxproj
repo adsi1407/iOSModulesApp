@@ -10,7 +10,6 @@
 		1AE5F88CA3488DC0EECFE542 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAA85F7A6DD707330CB08FB /* Pods_Domain.framework */; };
 		79230B0B254A20F200A06B8D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79230B01254A20F200A06B8D /* Domain.framework */; };
 		79230B10254A20F200A06B8D /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79230B0F254A20F200A06B8D /* DomainTests.swift */; };
-		79230B12254A20F200A06B8D /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 79230B04254A20F200A06B8D /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7940B3CA2566B76700680BCE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3C92566B76700680BCE /* Person.swift */; };
 		7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3CE2566BA1D00680BCE /* PersonRepository.swift */; };
 		7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3D42566BC0A00680BCE /* PersonService.swift */; };
@@ -36,7 +35,6 @@
 		3D5B4DA59C47596A75E794AB /* Pods-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-DomainTests/Pods-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 		500258CE13BAA7E3929B6855 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		79230B01254A20F200A06B8D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79230B04254A20F200A06B8D /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		79230B05254A20F200A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79230B0A254A20F200A06B8D /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B0F254A20F200A06B8D /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				7940B3CD2566BA0000680BCE /* Repository */,
 				7940B3C82566A2C200680BCE /* Service */,
 				799F2131254B320A00256C5C /* Model */,
-				79230B04254A20F200A06B8D /* Domain.h */,
 				79230B05254A20F200A06B8D /* Info.plist */,
 			);
 			path = Domain;
@@ -176,7 +173,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79230B12254A20F200A06B8D /* Domain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

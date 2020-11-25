@@ -5,8 +5,6 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 29/10/20.
 //
 
-import Foundation
-
 public class AuthUser {
     
     private var userId: String

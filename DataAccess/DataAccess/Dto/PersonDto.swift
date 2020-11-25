@@ -5,8 +5,6 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 19/11/20.
 //
 
-import Foundation
-
 public struct PersonDto {
     
     public var id: String?
