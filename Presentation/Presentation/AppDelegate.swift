@@ -6,25 +6,16 @@
 //
 
 import UIKit
-import Swinject
-import Domain
-import DataAccess
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let container: Container = Container()
+    let diContainer: DIContainer = DIContainer()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        container.register(PersonRepository.self) {
-            _ in PersonRepositoryRemote()
-        }
-        
-        container.register(PersonService.self) {
-            repository in PersonService(personRepository: repository.resolve(PersonRepository.self)!)
-        }
+        diContainer.registerDependencies()
         
         return true
     }
