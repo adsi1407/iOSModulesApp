@@ -23,11 +23,20 @@ target 'Presentation' do
 
 end
 
-target 'DataAccess' do
+target 'DataAccessLocal' do
   
-  xcodeproj 'DataAccess/DataAccess.xcodeproj'
+  xcodeproj 'DataAccessLocal/DataAccessLocal.xcodeproj'
 
-  # Pods for DataAccess
+  # Pods for DataAccessLocal
+  pod 'RealmSwift'
+
+end
+
+target 'DataAccessRemote' do
+  
+  xcodeproj 'DataAccessRemote/DataAccessRemote.xcodeproj'
+
+  # Pods for DataAccessRemote
 
 end
 

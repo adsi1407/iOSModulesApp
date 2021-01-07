@@ -7,7 +7,7 @@
 
 import Swinject
 import Domain
-import DataAccess
+import DataAccessRemote
 
 public class DIContainer {
     

@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7940B3DC2566C28B00680BCE /* PersonDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3DB2566C28B00680BCE /* PersonDto.swift */; };
-		7940B3E02566C29C00680BCE /* PersonRepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */; };
-		7940B3E22566C59600680BCE /* PersonTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3E12566C59600680BCE /* PersonTranslator.swift */; };
-		7940B3EA2566E02900680BCE /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7940B3E92566E02900680BCE /* Domain.framework */; };
-		7940B3EB2566E02900680BCE /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7940B3E92566E02900680BCE /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DFAA3D42AA14720A9D0D1F12 /* Pods_DataAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67DEE15916C13E7E0429BA /* Pods_DataAccess.framework */; };
+		79FC027325A77BA5007226D5 /* PersonTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC027225A77BA5007226D5 /* PersonTranslator.swift */; };
+		79FC027625A77BC7007226D5 /* PersonDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC027525A77BC7007226D5 /* PersonDto.swift */; };
+		79FC027925A77BF0007226D5 /* PersonRepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC027825A77BF0007226D5 /* PersonRepositoryRemote.swift */; };
+		79FC027D25A77C28007226D5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC027C25A77C28007226D5 /* Domain.framework */; };
+		79FC027E25A77C28007226D5 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC027C25A77C28007226D5 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACECE321503EEAA30560915E /* Pods_DataAccessRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A66511E624834DC8EE6F45 /* Pods_DataAccessRemote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7940B3EC2566E02900680BCE /* Embed Frameworks */ = {
+		79FC027F25A77C28007226D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7940B3EB2566E02900680BCE /* Domain.framework in Embed Frameworks */,
+				79FC027E25A77C28007226D5 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,110 +30,106 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		27FE362173496F4315282CAF /* Pods-DataAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccess.release.xcconfig"; path = "Target Support Files/Pods-DataAccess/Pods-DataAccess.release.xcconfig"; sourceTree = "<group>"; };
-		3C67DEE15916C13E7E0429BA /* Pods_DataAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4226F78A69F44D26FEEC2DED /* Pods-DataAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccess.debug.xcconfig"; path = "Target Support Files/Pods-DataAccess/Pods-DataAccess.debug.xcconfig"; sourceTree = "<group>"; };
-		79230B69254A229800A06B8D /* DataAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79230B6D254A229800A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7940B3DB2566C28B00680BCE /* PersonDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDto.swift; sourceTree = "<group>"; };
-		7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepositoryRemote.swift; sourceTree = "<group>"; };
-		7940B3E12566C59600680BCE /* PersonTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTranslator.swift; sourceTree = "<group>"; };
-		7940B3E42566C74E00680BCE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7940B3E92566E02900680BCE /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		799F212D254B31B400256C5C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FC026225A77B4F007226D5 /* DataAccessRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataAccessRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FC026625A77B4F007226D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FC027225A77BA5007226D5 /* PersonTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTranslator.swift; sourceTree = "<group>"; };
+		79FC027525A77BC7007226D5 /* PersonDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDto.swift; sourceTree = "<group>"; };
+		79FC027825A77BF0007226D5 /* PersonRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepositoryRemote.swift; sourceTree = "<group>"; };
+		79FC027C25A77C28007226D5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BCDDB774AC081D3664C12C /* Pods-DataAccessRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessRemote.debug.xcconfig"; path = "Target Support Files/Pods-DataAccessRemote/Pods-DataAccessRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		D6ED83CE09746D49C4CC2D3D /* Pods-DataAccessRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessRemote.release.xcconfig"; path = "Target Support Files/Pods-DataAccessRemote/Pods-DataAccessRemote.release.xcconfig"; sourceTree = "<group>"; };
+		E2A66511E624834DC8EE6F45 /* Pods_DataAccessRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataAccessRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79230B66254A229800A06B8D /* Frameworks */ = {
+		79FC025F25A77B4F007226D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7940B3EA2566E02900680BCE /* Domain.framework in Frameworks */,
-				DFAA3D42AA14720A9D0D1F12 /* Pods_DataAccess.framework in Frameworks */,
+				79FC027D25A77C28007226D5 /* Domain.framework in Frameworks */,
+				ACECE321503EEAA30560915E /* Pods_DataAccessRemote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		79230B5F254A229800A06B8D = {
+		42AA373F5E0E6D10FCCD088D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79230B6B254A229800A06B8D /* DataAccess */,
-				79230B6A254A229800A06B8D /* Products */,
-				799F212C254B31B400256C5C /* Frameworks */,
-				DDF0EFD0A02307FB94F8D8C0 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		79230B6A254A229800A06B8D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				79230B69254A229800A06B8D /* DataAccess.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		79230B6B254A229800A06B8D /* DataAccess */ = {
-			isa = PBXGroup;
-			children = (
-				7940B3D92566C20300680BCE /* Anticorruption */,
-				7940B3D82566C1AB00680BCE /* Dto */,
-				79230B6D254A229800A06B8D /* Info.plist */,
-				7940B3DA2566C21100680BCE /* Repository */,
-			);
-			path = DataAccess;
-			sourceTree = "<group>";
-		};
-		7940B3D82566C1AB00680BCE /* Dto */ = {
-			isa = PBXGroup;
-			children = (
-				7940B3DB2566C28B00680BCE /* PersonDto.swift */,
-			);
-			path = Dto;
-			sourceTree = "<group>";
-		};
-		7940B3D92566C20300680BCE /* Anticorruption */ = {
-			isa = PBXGroup;
-			children = (
-				7940B3E12566C59600680BCE /* PersonTranslator.swift */,
-			);
-			path = Anticorruption;
-			sourceTree = "<group>";
-		};
-		7940B3DA2566C21100680BCE /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				7940B3DF2566C29C00680BCE /* PersonRepositoryRemote.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		799F212C254B31B400256C5C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7940B3E92566E02900680BCE /* Domain.framework */,
-				7940B3E42566C74E00680BCE /* Domain.framework */,
-				799F212D254B31B400256C5C /* Domain.framework */,
-				3C67DEE15916C13E7E0429BA /* Pods_DataAccess.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DDF0EFD0A02307FB94F8D8C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4226F78A69F44D26FEEC2DED /* Pods-DataAccess.debug.xcconfig */,
-				27FE362173496F4315282CAF /* Pods-DataAccess.release.xcconfig */,
+				A2BCDDB774AC081D3664C12C /* Pods-DataAccessRemote.debug.xcconfig */,
+				D6ED83CE09746D49C4CC2D3D /* Pods-DataAccessRemote.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		79FC025825A77B4F007226D5 = {
+			isa = PBXGroup;
+			children = (
+				79FC026425A77B4F007226D5 /* DataAccessRemote */,
+				79FC026325A77B4F007226D5 /* Products */,
+				79FC027B25A77C27007226D5 /* Frameworks */,
+				42AA373F5E0E6D10FCCD088D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		79FC026325A77B4F007226D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FC026225A77B4F007226D5 /* DataAccessRemote.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79FC026425A77B4F007226D5 /* DataAccessRemote */ = {
+			isa = PBXGroup;
+			children = (
+				79FC027125A77B7C007226D5 /* Anticorruption */,
+				79FC027025A77B77007226D5 /* Dto */,
+				79FC026F25A77B6D007226D5 /* Repository */,
+				79FC026625A77B4F007226D5 /* Info.plist */,
+			);
+			path = DataAccessRemote;
+			sourceTree = "<group>";
+		};
+		79FC026F25A77B6D007226D5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				79FC027825A77BF0007226D5 /* PersonRepositoryRemote.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		79FC027025A77B77007226D5 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				79FC027525A77BC7007226D5 /* PersonDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		79FC027125A77B7C007226D5 /* Anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+				79FC027225A77BA5007226D5 /* PersonTranslator.swift */,
+			);
+			path = Anticorruption;
+			sourceTree = "<group>";
+		};
+		79FC027B25A77C27007226D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FC027C25A77C28007226D5 /* Domain.framework */,
+				E2A66511E624834DC8EE6F45 /* Pods_DataAccessRemote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		79230B64254A229800A06B8D /* Headers */ = {
+		79FC025D25A77B4F007226D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,41 +139,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		79230B68254A229800A06B8D /* DataAccess */ = {
+		79FC026125A77B4F007226D5 /* DataAccessRemote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79230B71254A229800A06B8D /* Build configuration list for PBXNativeTarget "DataAccess" */;
+			buildConfigurationList = 79FC026A25A77B4F007226D5 /* Build configuration list for PBXNativeTarget "DataAccessRemote" */;
 			buildPhases = (
-				02B9F9E9BCCAF267CD313F67 /* [CP] Check Pods Manifest.lock */,
-				79230B64254A229800A06B8D /* Headers */,
-				79230B65254A229800A06B8D /* Sources */,
-				79230B66254A229800A06B8D /* Frameworks */,
-				79230B67254A229800A06B8D /* Resources */,
-				7940B3EC2566E02900680BCE /* Embed Frameworks */,
+				BEA0C82809B56F77D376A415 /* [CP] Check Pods Manifest.lock */,
+				79FC025D25A77B4F007226D5 /* Headers */,
+				79FC025E25A77B4F007226D5 /* Sources */,
+				79FC025F25A77B4F007226D5 /* Frameworks */,
+				79FC026025A77B4F007226D5 /* Resources */,
+				79FC027F25A77C28007226D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DataAccess;
-			productName = DataAccess;
-			productReference = 79230B69254A229800A06B8D /* DataAccess.framework */;
+			name = DataAccessRemote;
+			productName = DataAccessRemote;
+			productReference = 79FC026225A77B4F007226D5 /* DataAccessRemote.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		79230B60254A229800A06B8D /* Project object */ = {
+		79FC025925A77B4F007226D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					79230B68254A229800A06B8D = {
-						CreatedOnToolsVersion = 12.0.1;
-						LastSwiftMigration = 1220;
+					79FC026125A77B4F007226D5 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
-			buildConfigurationList = 79230B63254A229800A06B8D /* Build configuration list for PBXProject "DataAccess" */;
+			buildConfigurationList = 79FC025C25A77B4F007226D5 /* Build configuration list for PBXProject "DataAccessRemote" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,18 +181,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 79230B5F254A229800A06B8D;
-			productRefGroup = 79230B6A254A229800A06B8D /* Products */;
+			mainGroup = 79FC025825A77B4F007226D5;
+			productRefGroup = 79FC026325A77B4F007226D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79230B68254A229800A06B8D /* DataAccess */,
+				79FC026125A77B4F007226D5 /* DataAccessRemote */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79230B67254A229800A06B8D /* Resources */ = {
+		79FC026025A77B4F007226D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,7 +202,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02B9F9E9BCCAF267CD313F67 /* [CP] Check Pods Manifest.lock */ = {
+		BEA0C82809B56F77D376A415 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,7 +217,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DataAccess-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DataAccessRemote-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -231,20 +227,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79230B65254A229800A06B8D /* Sources */ = {
+		79FC025E25A77B4F007226D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7940B3E02566C29C00680BCE /* PersonRepositoryRemote.swift in Sources */,
-				7940B3DC2566C28B00680BCE /* PersonDto.swift in Sources */,
-				7940B3E22566C59600680BCE /* PersonTranslator.swift in Sources */,
+				79FC027625A77BC7007226D5 /* PersonDto.swift in Sources */,
+				79FC027325A77BA5007226D5 /* PersonTranslator.swift in Sources */,
+				79FC027925A77BF0007226D5 /* PersonRepositoryRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		79230B6F254A229800A06B8D /* Debug */ = {
+		79FC026825A77B4F007226D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		79230B70254A229800A06B8D /* Release */ = {
+		79FC026925A77B4F007226D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -366,9 +362,9 @@
 			};
 			name = Release;
 		};
-		79230B72254A229800A06B8D /* Debug */ = {
+		79FC026B25A77B4F007226D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4226F78A69F44D26FEEC2DED /* Pods-DataAccess.debug.xcconfig */;
+			baseConfigurationReference = A2BCDDB774AC081D3664C12C /* Pods-DataAccessRemote.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,26 +372,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DataAccess/Info.plist;
+				INFOPLIST_FILE = DataAccessRemote/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccessRemote;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		79230B73254A229800A06B8D /* Release */ = {
+		79FC026C25A77B4F007226D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27FE362173496F4315282CAF /* Pods-DataAccess.release.xcconfig */;
+			baseConfigurationReference = D6ED83CE09746D49C4CC2D3D /* Pods-DataAccessRemote.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,44 +398,43 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DataAccess/Info.plist;
+				INFOPLIST_FILE = DataAccessRemote/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccess;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.DataAccessRemote;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79230B63254A229800A06B8D /* Build configuration list for PBXProject "DataAccess" */ = {
+		79FC025C25A77B4F007226D5 /* Build configuration list for PBXProject "DataAccessRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79230B6F254A229800A06B8D /* Debug */,
-				79230B70254A229800A06B8D /* Release */,
+				79FC026825A77B4F007226D5 /* Debug */,
+				79FC026925A77B4F007226D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79230B71254A229800A06B8D /* Build configuration list for PBXNativeTarget "DataAccess" */ = {
+		79FC026A25A77B4F007226D5 /* Build configuration list for PBXNativeTarget "DataAccessRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79230B72254A229800A06B8D /* Debug */,
-				79230B73254A229800A06B8D /* Release */,
+				79FC026B25A77B4F007226D5 /* Debug */,
+				79FC026C25A77B4F007226D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 79230B60254A229800A06B8D /* Project object */;
+	rootObject = 79FC025925A77B4F007226D5 /* Project object */;
 }

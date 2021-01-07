@@ -8,10 +8,13 @@
       location = "container:"
       name = "Infrastructure">
       <FileRef
-         location = "group:DeviceHardware/DeviceHardware.xcodeproj">
+         location = "group:DataAccessLocal/DataAccessLocal.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:DataAccess/DataAccess.xcodeproj">
+         location = "group:DataAccessRemote/DataAccessRemote.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DeviceHardware/DeviceHardware.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

@@ -7,7 +7,7 @@
 
 import UIKit
 import Domain
-import DataAccess
+import DataAccessRemote
 
 class HomeViewController: UIViewController {
 

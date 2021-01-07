@@ -1,8 +1,8 @@
 //
 //  PersonDto.swift
-//  DataAccess
+//  DataAccessRemote
 //
-//  Created by Andrés David Santacoloma Isaza - Ceiba Software on 19/11/20.
+//  Created by Andrés David Santacoloma Isaza - Ceiba Software on 7/01/21.
 //
 
 public struct PersonDto {
