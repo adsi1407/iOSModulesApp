@@ -10,5 +10,5 @@ import RealmSwift
 class RoleEntity: Object {
     
     @objc dynamic var name = ""
-    @objc dynamic var description = ""
+    @objc dynamic var roleDescription = ""
 }

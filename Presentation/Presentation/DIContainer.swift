@@ -8,6 +8,7 @@
 import Swinject
 import Domain
 import DataAccessRemote
+import DataAccessLocal
 
 public class DIContainer {
     
@@ -21,6 +22,10 @@ public class DIContainer {
         
         container.register(PersonService.self) {
             repository in PersonService(personRepository: repository.resolve(PersonRepository.self)!)
+        }
+        
+        container.register(RoleRepository.self) {
+            _ in RoleRepositoryRealm()
         }
     }
     

@@ -6,6 +6,7 @@
 //
 
 import Domain
+import RealmSwift
 
 public class RoleRepositoryRealm: RoleRepository {
     
@@ -19,9 +20,9 @@ public class RoleRepositoryRealm: RoleRepository {
     
     public func getRoles() -> [Role] {
         
-        let roleEntities = database.objects(Role.self)
+        let roleEntities = database.objects(RoleEntity.self)
         let roleTranslator: RoleTranslator = RoleTranslator()
-        let roles : [Role] = []
+        var roles : [Role] = []
         
         for roleEntity in roleEntities {
             roles.append(roleTranslator.fromDatabaseEntityToDomainModel(roleEntity: roleEntity))
@@ -31,19 +32,19 @@ public class RoleRepositoryRealm: RoleRepository {
     }
     
     private func seedRoles() {
-        let roles = database.objects(Role.self)
+        let roles = database.objects(RoleEntity.self)
         
         if roles.count == 0 {
-            let defaultRoles: RoleEntity[] = []
+            var defaultRoles: [RoleEntity] = []
             
             let adminRole : RoleEntity = RoleEntity()
             adminRole.name = "Admin"
-            adminRole.description = "System administrator. Full access."
+            adminRole.roleDescription = "System administrator. Full access."
             defaultRoles.append(adminRole)
             
             let userRole : RoleEntity = RoleEntity()
             userRole.name = "User"
-            userRole.description = "Normal user. Some functionalities."
+            userRole.roleDescription = "Normal user. Some functionalities."
             defaultRoles.append(userRole)
             
             try! database.write() {

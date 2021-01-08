@@ -11,8 +11,8 @@ class RoleTranslator {
     
     func fromDatabaseEntityToDomainModel(roleEntity: RoleEntity) -> Role {
         
-        let role: Role = Role(roleEntity.name)
-        role.setDescription(description: roleEntity.description)
+        let role: Role = Role(name: roleEntity.name)
+        role.setDescription(description: roleEntity.roleDescription)
         return role
     }
 }
