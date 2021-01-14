@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01220472F22A489F9AECA3E8 /* Pods_DataAccessLocal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */; };
+		792486A125AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */; };
+		792486A225AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		792486B025AE216F00CE15DA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792486AF25AE216F00CE15DA /* Realm.framework */; };
+		792486B125AE216F00CE15DA /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 792486AF25AE216F00CE15DA /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		792486B325AE21E900CE15DA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792486B225AE21E900CE15DA /* RealmSwift.framework */; };
+		792486B425AE21E900CE15DA /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 792486B225AE21E900CE15DA /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79FC02C925A77E14007226D5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC02C825A77E14007226D5 /* Domain.framework */; };
 		79FC02CA25A77E14007226D5 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC02C825A77E14007226D5 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79FC02D025A77E51007226D5 /* RoleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC02CF25A77E51007226D5 /* RoleEntity.swift */; };
@@ -22,6 +27,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				792486B125AE216F00CE15DA /* Realm.framework in Embed Frameworks */,
+				792486A225AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Embed Frameworks */,
+				792486B425AE21E900CE15DA /* RealmSwift.framework in Embed Frameworks */,
 				79FC02CA25A77E14007226D5 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -30,10 +38,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataAccessLocal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DataAccessLocal.framework; path = "../Debug-iphonesimulator/Pods_DataAccessLocal.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792486AF25AE216F00CE15DA /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Realm.framework; path = "../Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792486B225AE21E900CE15DA /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = RealmSwift.framework; path = "../Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FC02AB25A77D63007226D5 /* DataAccessLocal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataAccessLocal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FC02AF25A77D63007226D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79FC02C825A77E14007226D5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FC02C825A77E14007226D5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Domain.framework; path = "../Debug-iphonesimulator/Domain.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FC02CF25A77E51007226D5 /* RoleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleEntity.swift; sourceTree = "<group>"; };
 		79FC02D125A77E6B007226D5 /* RoleRepositoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRepositoryRealm.swift; sourceTree = "<group>"; };
 		79FC02D325A77E80007226D5 /* RoleTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleTranslator.swift; sourceTree = "<group>"; };
@@ -46,8 +56,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792486B025AE216F00CE15DA /* Realm.framework in Frameworks */,
+				792486A125AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Frameworks */,
+				792486B325AE21E900CE15DA /* RealmSwift.framework in Frameworks */,
 				79FC02C925A77E14007226D5 /* Domain.framework in Frameworks */,
-				01220472F22A489F9AECA3E8 /* Pods_DataAccessLocal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,8 @@
 		646DFEE25C6B4CB87449D558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				792486B225AE21E900CE15DA /* RealmSwift.framework */,
+				792486AF25AE216F00CE15DA /* Realm.framework */,
 				79FC02C825A77E14007226D5 /* Domain.framework */,
 				396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */,
 			);
