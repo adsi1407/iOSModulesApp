@@ -10,6 +10,7 @@
 		1AE5F88CA3488DC0EECFE542 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAA85F7A6DD707330CB08FB /* Pods_Domain.framework */; };
 		79230B0B254A20F200A06B8D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79230B01254A20F200A06B8D /* Domain.framework */; };
 		79230B10254A20F200A06B8D /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79230B0F254A20F200A06B8D /* DomainTests.swift */; };
+		792486C525AE5CFD00CE15DA /* AuthUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792486C425AE5CFD00CE15DA /* AuthUserTests.swift */; };
 		7940B3CA2566B76700680BCE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3C92566B76700680BCE /* Person.swift */; };
 		7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3CE2566BA1D00680BCE /* PersonRepository.swift */; };
 		7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3D42566BC0A00680BCE /* PersonService.swift */; };
@@ -41,6 +42,7 @@
 		79230B0A254A20F200A06B8D /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B0F254A20F200A06B8D /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		79230B11254A20F200A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		792486C425AE5CFD00CE15DA /* AuthUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserTests.swift; sourceTree = "<group>"; };
 		7940B3C92566B76700680BCE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7940B3CE2566BA1D00680BCE /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		7940B3D42566BC0A00680BCE /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		794959C025937F5F00A54EBE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				792486C425AE5CFD00CE15DA /* AuthUserTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				794959C325937FBC00A54EBE /* PersonServiceTests.swift in Sources */,
+				792486C525AE5CFD00CE15DA /* AuthUserTests.swift in Sources */,
 				79230B10254A20F200A06B8D /* DomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
