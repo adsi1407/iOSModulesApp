@@ -11,6 +11,8 @@ public class AuthUser {
     private var password: String?
     private var roles: Array<Role>
     
+    private let passwordPattern: String = #"^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,}"#
+    
     public init(userId: String, password: String, roles: Array<Role>) throws {
         self.userId = userId
         self.roles = roles
@@ -42,6 +44,6 @@ public class AuthUser {
     
     private func validatePassword(password: String) -> Bool {
         
-        return true
+        return password.range(of: passwordPattern, options: .regularExpression) != nil
     }
 }
