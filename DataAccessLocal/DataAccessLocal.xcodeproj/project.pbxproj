@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AA4A83EE9232F580D681C5 /* Pods_DataAccessLocal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB15EA59351972096B723F /* Pods_DataAccessLocal.framework */; };
 		792486A125AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */; };
 		792486A225AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		792486B025AE216F00CE15DA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792486AF25AE216F00CE15DA /* Realm.framework */; };
@@ -47,6 +48,7 @@
 		79FC02CF25A77E51007226D5 /* RoleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleEntity.swift; sourceTree = "<group>"; };
 		79FC02D125A77E6B007226D5 /* RoleRepositoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRepositoryRealm.swift; sourceTree = "<group>"; };
 		79FC02D325A77E80007226D5 /* RoleTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleTranslator.swift; sourceTree = "<group>"; };
+		95FB15EA59351972096B723F /* Pods_DataAccessLocal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataAccessLocal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55B3290AB4FFB4B04C21975 /* Pods-DataAccessLocal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessLocal.debug.xcconfig"; path = "Target Support Files/Pods-DataAccessLocal/Pods-DataAccessLocal.debug.xcconfig"; sourceTree = "<group>"; };
 		D8FC7FC4D95CCD60BE54805E /* Pods-DataAccessLocal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessLocal.release.xcconfig"; path = "Target Support Files/Pods-DataAccessLocal/Pods-DataAccessLocal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 				792486A125AE0A0100CE15DA /* Pods_DataAccessLocal.framework in Frameworks */,
 				792486B325AE21E900CE15DA /* RealmSwift.framework in Frameworks */,
 				79FC02C925A77E14007226D5 /* Domain.framework in Frameworks */,
+				27AA4A83EE9232F580D681C5 /* Pods_DataAccessLocal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 				792486AF25AE216F00CE15DA /* Realm.framework */,
 				79FC02C825A77E14007226D5 /* Domain.framework */,
 				396BEAFC0833F25F706FE396 /* Pods_DataAccessLocal.framework */,
+				95FB15EA59351972096B723F /* Pods_DataAccessLocal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
