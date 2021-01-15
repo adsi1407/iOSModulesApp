@@ -1,4 +1,5 @@
 PODS:
+  - MockingbirdFramework (0.16.0)
   - Realm (10.1.4):
     - Realm/Headers (= 10.1.4)
   - Realm/Headers (10.1.4)
@@ -7,20 +8,23 @@ PODS:
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - MockingbirdFramework
   - RealmSwift
   - Swinject
 
 SPEC REPOS:
   trunk:
+    - MockingbirdFramework
     - Realm
     - RealmSwift
     - Swinject
 
 SPEC CHECKSUMS:
+  MockingbirdFramework: d1c649854c0a4ae5b115f860d75513b6438489a2
   Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
   RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 9eabc3af79d67f743a09965676f12467738295a0
+PODFILE CHECKSUM: 62f7a60c53c2c690806c208f8f6618d29773a211
 
 COCOAPODS: 1.10.0

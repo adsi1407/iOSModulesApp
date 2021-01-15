@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1AE5F88CA3488DC0EECFE542 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAA85F7A6DD707330CB08FB /* Pods_Domain.framework */; };
 		79230B0B254A20F200A06B8D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79230B01254A20F200A06B8D /* Domain.framework */; };
-		79230B10254A20F200A06B8D /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79230B0F254A20F200A06B8D /* DomainTests.swift */; };
 		792486C525AE5CFD00CE15DA /* AuthUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792486C425AE5CFD00CE15DA /* AuthUserTests.swift */; };
 		7940B3CA2566B76700680BCE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3C92566B76700680BCE /* Person.swift */; };
 		7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3CE2566BA1D00680BCE /* PersonRepository.swift */; };
@@ -19,6 +18,7 @@
 		799F2139254B33A300256C5C /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F2138254B33A300256C5C /* AuthUser.swift */; };
 		79DF8761256C2FD500BB7EC9 /* BusinessException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF8760256C2FD500BB7EC9 /* BusinessException.swift */; };
 		79FC022625A76B55007226D5 /* RoleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC022525A76B55007226D5 /* RoleRepository.swift */; };
+		970D94065FBEF5F51DAE7D08 /* DomainTests-DomainMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5443894DF9AEC64576870 /* DomainTests-DomainMocks.generated.swift */; };
 		98E34A0E2710B6EDCBE07EC0 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FFD5AFC4179D0C2D44F234 /* Pods_DomainTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +37,10 @@
 		235984927DEA65AD686D600B /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		3D5B4DA59C47596A75E794AB /* Pods-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-DomainTests/Pods-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 		500258CE13BAA7E3929B6855 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		6BB5443894DF9AEC64576870 /* DomainTests-DomainMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "DomainTests-DomainMocks.generated.swift"; path = "MockingbirdMocks/DomainTests-DomainMocks.generated.swift"; sourceTree = "<group>"; };
 		79230B01254A20F200A06B8D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79230B05254A20F200A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79230B0A254A20F200A06B8D /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79230B0F254A20F200A06B8D /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		79230B11254A20F200A06B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792486C425AE5CFD00CE15DA /* AuthUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserTests.swift; sourceTree = "<group>"; };
 		7940B3C92566B76700680BCE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -93,6 +93,7 @@
 				79230B02254A20F200A06B8D /* Products */,
 				E9C39E52D65119A7EDD0FA36 /* Pods */,
 				5987A2887574DE952244BF7B /* Frameworks */,
+				8BAE8F844E204E1A68C67E81 /* Generated Mocks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +121,6 @@
 		79230B0E254A20F200A06B8D /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				79230B0F254A20F200A06B8D /* DomainTests.swift */,
 				79230B11254A20F200A06B8D /* Info.plist */,
 				794959C025937F5F00A54EBE /* Model */,
 				794959C125937F6700A54EBE /* Service */,
@@ -179,6 +179,14 @@
 			path = Exception;
 			sourceTree = "<group>";
 		};
+		8BAE8F844E204E1A68C67E81 /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6BB5443894DF9AEC64576870 /* DomainTests-DomainMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
+			sourceTree = "<group>";
+		};
 		E9C39E52D65119A7EDD0FA36 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,9 +236,12 @@
 			buildConfigurationList = 79230B18254A20F200A06B8D /* Build configuration list for PBXNativeTarget "DomainTests" */;
 			buildPhases = (
 				F5182B01DE77DD3DBEC3FA81 /* [CP] Check Pods Manifest.lock */,
+				1A1912251D52A4C130288258 /* Clean Mockingbird Mocks */,
+				93BEC68C6C9DC84A9B81FB76 /* Generate Mockingbird Mocks */,
 				79230B06254A20F200A06B8D /* Sources */,
 				79230B07254A20F200A06B8D /* Frameworks */,
 				79230B08254A20F200A06B8D /* Resources */,
+				9605016632DBB1B82955D7CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +308,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A1912251D52A4C130288258 /* Clean Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Clean Mockingbird Mocks";
+			outputPaths = (
+				"/tmp/Mockingbird-F874990A-ED19-403C-9905-66106B15FE08",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $RANDOM > '/tmp/Mockingbird-F874990A-ED19-403C-9905-66106B15FE08'\n";
+		};
 		60EDE6A2148C9EF7D9ED6FD4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +343,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BEC68C6C9DC84A9B81FB76 /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"/tmp/Mockingbird-F874990A-ED19-403C-9905-66106B15FE08",
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/DomainTests-DomainMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmockingbird generate \\\n  --targets 'Domain' \\\n  --outputs \"${SRCROOT}/MockingbirdMocks/DomainTests-DomainMocks.generated.swift\" \\\n  --support \"${SRCROOT}/MockingbirdSupport\"\n\n# Ensure mocks are generated prior to running Compile Sources\nrm -f '/tmp/Mockingbird-F874990A-ED19-403C-9905-66106B15FE08'\n";
+		};
+		9605016632DBB1B82955D7CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F5182B01DE77DD3DBEC3FA81 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,7 +427,7 @@
 			files = (
 				794959C325937FBC00A54EBE /* PersonServiceTests.swift in Sources */,
 				792486C525AE5CFD00CE15DA /* AuthUserTests.swift in Sources */,
-				79230B10254A20F200A06B8D /* DomainTests.swift in Sources */,
+				970D94065FBEF5F51DAE7D08 /* DomainTests-DomainMocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
