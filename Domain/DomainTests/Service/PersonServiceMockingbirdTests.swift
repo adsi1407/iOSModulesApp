@@ -9,7 +9,7 @@ import XCTest
 import Mockingbird
 @testable import Domain
 
-class PersonServiceTests: XCTestCase {
+class PersonServiceMockingbirdTests: XCTestCase {
     
     func test_savePerson_personWithRightParameters_successful() throws {
         
