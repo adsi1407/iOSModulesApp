@@ -58,6 +58,7 @@ target 'Domain' do
     inherit! :search_paths
     # Pods for testing
     pod 'MockingbirdFramework'
+    pod 'Cuckoo'
   end
 
 end

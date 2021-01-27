@@ -260,6 +260,7 @@
 				F5182B01DE77DD3DBEC3FA81 /* [CP] Check Pods Manifest.lock */,
 				1A1912251D52A4C130288258 /* Clean Mockingbird Mocks */,
 				93BEC68C6C9DC84A9B81FB76 /* Generate Mockingbird Mocks */,
+				799A76BC25B74492008B6EB4 /* Generate Cuckoo Mocks */,
 				79230B06254A20F200A06B8D /* Sources */,
 				79230B07254A20F200A06B8D /* Frameworks */,
 				79230B08254A20F200A06B8D /* Resources */,
@@ -366,6 +367,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		799A76BC25B74492008B6EB4 /* Generate Cuckoo Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Cuckoo Mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\necho \"PROJECT_DIR = ${PROJECT_DIR}\"\necho \"PROJECT_NAME = ${PROJECT_NAME}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Repository/PersonRepository.swift\" \\\n\"${INPUT_DIR}/Repository/RoleRepository.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		93BEC68C6C9DC84A9B81FB76 /* Generate Mockingbird Mocks */ = {
 			isa = PBXShellScriptBuildPhase;
