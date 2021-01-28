@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Domain/Repository/PersonRepository.swift at 2021-01-27 23:36:26 +0000
+// MARK: - Mocks generated from file: Domain/Repository/PersonRepository.swift at 2021-01-28 01:25:30 +0000
 
 //
 //  PersonRepository.swift
@@ -133,7 +133,7 @@ public class PersonRepositoryStub: PersonRepository {
 }
 
 
-// MARK: - Mocks generated from file: Domain/Repository/RoleRepository.swift at 2021-01-27 23:36:26 +0000
+// MARK: - Mocks generated from file: Domain/Repository/RoleRepository.swift at 2021-01-28 01:25:30 +0000
 
 //
 //  RoleRepository.swift

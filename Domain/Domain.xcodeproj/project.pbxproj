@@ -16,10 +16,13 @@
 		7940B3CF2566BA1D00680BCE /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3CE2566BA1D00680BCE /* PersonRepository.swift */; };
 		7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940B3D42566BC0A00680BCE /* PersonService.swift */; };
 		794959C325937FBC00A54EBE /* PersonServiceMockingbirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794959C225937FBC00A54EBE /* PersonServiceMockingbirdTests.swift */; };
+		799A76B925B639F7008B6EB4 /* PersonServiceCuckooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A76B825B639F7008B6EB4 /* PersonServiceCuckooTests.swift */; };
 		799F2133254B330D00256C5C /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F2132254B330D00256C5C /* Role.swift */; };
 		799F2139254B33A300256C5C /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F2138254B33A300256C5C /* AuthUser.swift */; };
 		79DF8761256C2FD500BB7EC9 /* BusinessException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF8760256C2FD500BB7EC9 /* BusinessException.swift */; };
 		79FC022625A76B55007226D5 /* RoleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC022525A76B55007226D5 /* RoleRepository.swift */; };
+		79FC833325C234EF0050FA3D /* CuckooGeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC832B25C234CA0050FA3D /* CuckooGeneratedMocks.swift */; };
+		79FC833A25C246970050FA3D /* CuckooPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC833925C246970050FA3D /* CuckooPerson.swift */; };
 		970D94065FBEF5F51DAE7D08 /* DomainTests-DomainMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5443894DF9AEC64576870 /* DomainTests-DomainMocks.generated.swift */; };
 		98E34A0E2710B6EDCBE07EC0 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FFD5AFC4179D0C2D44F234 /* Pods_DomainTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,10 +54,13 @@
 		7940B3CE2566BA1D00680BCE /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		7940B3D42566BC0A00680BCE /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
 		794959C225937FBC00A54EBE /* PersonServiceMockingbirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonServiceMockingbirdTests.swift; sourceTree = "<group>"; };
+		799A76B825B639F7008B6EB4 /* PersonServiceCuckooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonServiceCuckooTests.swift; sourceTree = "<group>"; };
 		799F2132254B330D00256C5C /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		799F2138254B33A300256C5C /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		79DF8760256C2FD500BB7EC9 /* BusinessException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessException.swift; sourceTree = "<group>"; };
 		79FC022525A76B55007226D5 /* RoleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRepository.swift; sourceTree = "<group>"; };
+		79FC832B25C234CA0050FA3D /* CuckooGeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuckooGeneratedMocks.swift; sourceTree = "<group>"; };
+		79FC833925C246970050FA3D /* CuckooPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuckooPerson.swift; sourceTree = "<group>"; };
 		85FFD5AFC4179D0C2D44F234 /* Pods_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F1E3C37E559352A24A77DE /* Pods-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-DomainTests/Pods-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +131,7 @@
 		79230B0E254A20F200A06B8D /* DomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				79FC833825C2467A0050FA3D /* CuckooExtensions */,
 				7924870925B124B200CE15DA /* Mocks */,
 				79230B11254A20F200A06B8D /* Info.plist */,
 				794959C025937F5F00A54EBE /* Model */,
@@ -136,6 +143,7 @@
 		7924870925B124B200CE15DA /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				79FC832B25C234CA0050FA3D /* CuckooGeneratedMocks.swift */,
 				7924870A25B124C000CE15DA /* Infrastructure */,
 			);
 			path = Mocks;
@@ -179,6 +187,7 @@
 			children = (
 				794959C225937FBC00A54EBE /* PersonServiceMockingbirdTests.swift */,
 				7924871325B128B300CE15DA /* PersonServiceManualMockTests.swift */,
+				799A76B825B639F7008B6EB4 /* PersonServiceCuckooTests.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -199,6 +208,14 @@
 				79DF8760256C2FD500BB7EC9 /* BusinessException.swift */,
 			);
 			path = Exception;
+			sourceTree = "<group>";
+		};
+		79FC833825C2467A0050FA3D /* CuckooExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				79FC833925C246970050FA3D /* CuckooPerson.swift */,
+			);
+			path = CuckooExtensions;
 			sourceTree = "<group>";
 		};
 		8BAE8F844E204E1A68C67E81 /* Generated Mocks */ = {
@@ -384,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\necho \"PROJECT_DIR = ${PROJECT_DIR}\"\necho \"PROJECT_NAME = ${PROJECT_NAME}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Repository/PersonRepository.swift\" \\\n\"${INPUT_DIR}/Repository/RoleRepository.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/CuckooGeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\necho \"PROJECT_DIR = ${PROJECT_DIR}\"\necho \"PROJECT_NAME = ${PROJECT_NAME}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Repository/PersonRepository.swift\" \\\n\"${INPUT_DIR}/Repository/RoleRepository.swift\"\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		93BEC68C6C9DC84A9B81FB76 /* Generate Mockingbird Mocks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -410,13 +427,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,6 +479,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FC833A25C246970050FA3D /* CuckooPerson.swift in Sources */,
+				79FC833325C234EF0050FA3D /* CuckooGeneratedMocks.swift in Sources */,
+				799A76B925B639F7008B6EB4 /* PersonServiceCuckooTests.swift in Sources */,
 				794959C325937FBC00A54EBE /* PersonServiceMockingbirdTests.swift in Sources */,
 				7924871425B128B300CE15DA /* PersonServiceManualMockTests.swift in Sources */,
 				792486C525AE5CFD00CE15DA /* AuthUserTests.swift in Sources */,
