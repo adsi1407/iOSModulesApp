@@ -23,6 +23,7 @@
 		79FC022625A76B55007226D5 /* RoleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC022525A76B55007226D5 /* RoleRepository.swift */; };
 		79FC833325C234EF0050FA3D /* CuckooGeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC832B25C234CA0050FA3D /* CuckooGeneratedMocks.swift */; };
 		79FC833A25C246970050FA3D /* CuckooPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC833925C246970050FA3D /* CuckooPerson.swift */; };
+		79FC834225C307C10050FA3D /* RoleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FC834125C307C10050FA3D /* RoleService.swift */; };
 		970D94065FBEF5F51DAE7D08 /* DomainTests-DomainMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5443894DF9AEC64576870 /* DomainTests-DomainMocks.generated.swift */; };
 		98E34A0E2710B6EDCBE07EC0 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FFD5AFC4179D0C2D44F234 /* Pods_DomainTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		79FC022525A76B55007226D5 /* RoleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRepository.swift; sourceTree = "<group>"; };
 		79FC832B25C234CA0050FA3D /* CuckooGeneratedMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuckooGeneratedMocks.swift; sourceTree = "<group>"; };
 		79FC833925C246970050FA3D /* CuckooPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuckooPerson.swift; sourceTree = "<group>"; };
+		79FC834125C307C10050FA3D /* RoleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleService.swift; sourceTree = "<group>"; };
 		85FFD5AFC4179D0C2D44F234 /* Pods_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F1E3C37E559352A24A77DE /* Pods-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-DomainTests/Pods-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				7940B3D42566BC0A00680BCE /* PersonService.swift */,
+				79FC834125C307C10050FA3D /* RoleService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				799F2133254B330D00256C5C /* Role.swift in Sources */,
 				79FC022625A76B55007226D5 /* RoleRepository.swift in Sources */,
 				7940B3D52566BC0A00680BCE /* PersonService.swift in Sources */,
+				79FC834225C307C10050FA3D /* RoleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,17 +12,17 @@ import DataAccessRemote
 class HomeViewController: UIViewController {
 
     private var personService: PersonService?
+    private var roleService: RoleService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         personService = appDelegate.diContainer.getContainer().resolve(PersonService.self)!
+        roleService = appDelegate.diContainer.getContainer().resolve(RoleService.self)!
         
-        var roles: Array<Role> = Array<Role>()
-        let role: Role = Role(name: "Role01")
-        role.setDescription(description: "RoleDescription01")
-        roles.append(role)
+        var roles: Array<Role> = roleService!.getRoles()
+        roles.append(roles[1])
         
         do {
             let authUser: AuthUser = try AuthUser(userId: "User01", password: "123", roles: roles)

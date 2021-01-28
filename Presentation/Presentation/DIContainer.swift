@@ -27,6 +27,10 @@ public class DIContainer {
         container.register(RoleRepository.self) {
             _ in RoleRepositoryRealm()
         }
+        
+        container.register(RoleService.self) {
+            repository in RoleService(roleRepository: repository.resolve(RoleRepository.self)!)
+        }
     }
     
     func getContainer() -> Container {
