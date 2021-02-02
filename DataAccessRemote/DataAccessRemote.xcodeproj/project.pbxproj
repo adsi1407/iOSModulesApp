@@ -36,6 +36,7 @@
 		79FC027525A77BC7007226D5 /* PersonDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDto.swift; sourceTree = "<group>"; };
 		79FC027825A77BF0007226D5 /* PersonRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepositoryRemote.swift; sourceTree = "<group>"; };
 		79FC027C25A77C28007226D5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FC838D25C8B3E10050FA3D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2BCDDB774AC081D3664C12C /* Pods-DataAccessRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessRemote.debug.xcconfig"; path = "Target Support Files/Pods-DataAccessRemote/Pods-DataAccessRemote.debug.xcconfig"; sourceTree = "<group>"; };
 		D6ED83CE09746D49C4CC2D3D /* Pods-DataAccessRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataAccessRemote.release.xcconfig"; path = "Target Support Files/Pods-DataAccessRemote/Pods-DataAccessRemote.release.xcconfig"; sourceTree = "<group>"; };
 		E2A66511E624834DC8EE6F45 /* Pods_DataAccessRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataAccessRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +121,7 @@
 		79FC027B25A77C27007226D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79FC838D25C8B3E10050FA3D /* Alamofire.framework */,
 				79FC027C25A77C28007226D5 /* Domain.framework */,
 				E2A66511E624834DC8EE6F45 /* Pods_DataAccessRemote.framework */,
 			);

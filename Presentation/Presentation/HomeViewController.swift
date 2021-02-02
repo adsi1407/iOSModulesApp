@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         roles.append(roles[1])
         
         do {
-            let authUser: AuthUser = try AuthUser(userId: "User01", password: "123", roles: roles)
+            let authUser: AuthUser = try AuthUser(userId: "User01", password: "abc123AB", roles: roles)
             let person = try Person(id: "Person01", name: "Summy Person", authUser: authUser)
             try personService!.savePerson(person: person)
             print("Se ha guardado correctamente")

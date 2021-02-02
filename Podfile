@@ -11,6 +11,7 @@ target 'Presentation' do
 
   # Pods for Presentation
   pod 'Swinject'
+  pod 'Alamofire'
 
   target 'PresentationTests' do
     inherit! :search_paths
@@ -35,8 +36,9 @@ end
 target 'DataAccessRemote' do
   
   xcodeproj 'DataAccessRemote/DataAccessRemote.xcodeproj'
-
+  
   # Pods for DataAccessRemote
+  pod 'Alamofire'
 
 end
 

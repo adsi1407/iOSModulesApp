@@ -4,8 +4,9 @@
 //
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 7/01/21.
 //
+import Alamofire
 
-public struct PersonDto {
+public struct PersonDto: Codable {
     
     public var id: String?
     public var name: String?

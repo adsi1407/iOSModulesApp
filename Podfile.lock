@@ -1,30 +1,40 @@
 PODS:
+  - Alamofire (5.4.1)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
   - MockingbirdFramework (0.16.0)
-  - Realm (10.1.4):
-    - Realm/Headers (= 10.1.4)
-  - Realm/Headers (10.1.4)
-  - RealmSwift (10.1.4):
-    - Realm (= 10.1.4)
+  - Realm (10.5.1):
+    - Realm/Headers (= 10.5.1)
+  - Realm/Headers (10.5.1)
+  - RealmSwift (10.5.1):
+    - Realm (= 10.5.1)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - Cuckoo
   - MockingbirdFramework
   - RealmSwift
   - Swinject
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Cuckoo
     - MockingbirdFramework
     - Realm
     - RealmSwift
     - Swinject
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
   MockingbirdFramework: d1c649854c0a4ae5b115f860d75513b6438489a2
-  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
-  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  Realm: 77fcb4e0b9f2963ea06f584749a0d7dc9cab95e1
+  RealmSwift: 6abe6aa6cd8b70cc1a87afcb9232cabea74ff1ac
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 62f7a60c53c2c690806c208f8f6618d29773a211
+PODFILE CHECKSUM: e76d226db2cd39adcd1de4c2de14e59b504596f0
 
 COCOAPODS: 1.10.0
