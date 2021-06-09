@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
 
     private var personService: PersonService?
     private var roleService: RoleService?
+    private var roles: Array<Role>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +22,15 @@ class HomeViewController: UIViewController {
         personService = appDelegate.diContainer.getContainer().resolve(PersonService.self)!
         roleService = appDelegate.diContainer.getContainer().resolve(RoleService.self)!
         
-        var roles: Array<Role> = roleService!.getRoles()
-        roles.append(roles[1])
+        roles = roleService!.getRoles()
+        roles!.append(roles![1])
+        
+    }
+    
+    @IBAction func createUserButton_click(_ sender: UIButton) {
         
         do {
-            let authUser: AuthUser = try AuthUser(userId: "User01", password: "abc123AB", roles: roles)
+            let authUser: AuthUser = try AuthUser(userId: "User01", password: "abc123AB", roles: roles!)
             let person = try Person(id: "Person01", name: "Summy Person", authUser: authUser)
             try personService!.savePerson(person: person)
             print("Se ha guardado correctamente")
@@ -39,6 +44,5 @@ class HomeViewController: UIViewController {
             print("Sucedió un error")
         }
     }
-
 }
 
